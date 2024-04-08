@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table img {
+            width: 50px;
+        }
+
+        #form {
+            width: 600px;
+            height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(33, 42, 42);
+            box-shadow: 0 0 20px 20px #0f8282;
+            border: 10px solid rgb(31, 112, 32);
+        }
+
+        #form input {
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            text-transform: capitalize;
+            padding-left: 20px;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        table {
+            margin-top: 100px;
+        }
+
+        tbody th {
+            color: rgb(19, 23, 23);
+        }
+
+        select {
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        #delete {
+            color: red;
+        }
+
+        label {
+            color: aliceblue;
+            margin: 20px;
+            padding-top: 5px;
+        }
+
+        #submit:hover {
+            background-color: rgb(11, 107, 93);
+            transition: all 0.5S;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <h2>Product Form</h2><br />
+        <label> ENTER PRODUCTS NAME</label><br>
+        <input type="text" placeholder="product name" id="product_name" required><br><br>
+        <label> ENTER ITEM NAME</label><br>
+        <input type="text" placeholder="enter item name" id="item" required><br><br>
+        <label> ENTER PRICE </label><br>
+        <input type="text" placeholder="enter price  " id="enter_price" required><br><br>
+        <label>ENTER IMG URL</label>
+        <input type="src" placeholder="img URL" id="img" required><br><br>
+        <label>SELECT CATEGORY</label>
+        <select name="select category " id="category " required>
+            <option value="select category ">select category </option>
+            <option value="baby">baby </option>
+            <option value="books">books</option>
+            <option value="deales">deales</option>
+        </select><br><br>
+        <input type="submit" id="submit">
+    </form>
+
+    <table border="1px solid black" cellspacing="10px" cellpadding="10px" id="output">
+        <tbody>
+            <tr>
+                <th>product name</th>
+                <th>img</th>
+                <th>enter price</th>
+                <th>item</th>
+                <th>category </th>
+                <th id="delete">delete</th>
+            </tr>
+        </tbody>
+        <tbody id="data"></tbody>
+    </table>
+    <script src="./form/index.js"></script>
+</body>
+
+</html>
